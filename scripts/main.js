@@ -44,8 +44,11 @@ function foldedButtonTable(table){
     table.table(Tex.buttonEdge3, t => {
         t.name = "tc-foldedtable";
         foldedButton = t.button("[accent]x1", () => {
-            curSpeed++;
-            if(curSpeed > 2) curSpeed = -2;
+            if(curSpeed < 0 || curSpeed >= 3){
+                curSpeed = 0;
+            }else{
+                curSpeed++;
+            }
             
             let speed = Math.pow(2, curSpeed);
             Time.setDeltaProvider(() => Math.min(Core.graphics.getDeltaTime() * 60 * speed, 3 * speed));

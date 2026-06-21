@@ -1,9 +1,9 @@
 {
-	"name": "time-control",
-	"displayName": "Time Control",
-	"author": "[royal]sk7725[]",
+	"name": "nghiapd-time-control",
+	"displayName": "madn Time Control",
+	"author": "[royal]sk7725[royal]nghiapd",
 	"description": "Speeds up or slows down Mindustry.\nDrag the slider to change the speed.\n\n[scarlet]Disclaimer: not intended for multiplayer use![]",
-  "version": "0.2",
+	"version": "0.3",
 	"hidden": true,
 	"minGameVersion": 136
 }
